@@ -13,16 +13,11 @@ class ChitChat {
 	static IzpisiPrejetoRobot izpis_robot = new IzpisiPrejetoRobot(chatFrame);
 
 	public static void main(String[] args) throws IOException, URISyntaxException {
-		// uporaba GlasnejeRobot.java
-		//GlasnejeRobot robot2 = new GlasnejeRobot(chatFrame);
 
 		// okno za prijavo na stražnik
 		ChitChat.loginFrame.pack();
 		ChitChat.loginFrame.setVisible(true);
 		ChitChat.loginFrame.setAlwaysOnTop(true);
-
-
-
 
 		Logger.info("Main-zadnja-vrstica");
 	}

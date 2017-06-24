@@ -21,9 +21,9 @@ import java.util.List;
 class Klient {
 	// skupni atributi za razred Klient
 	private static String chitchat_web_address = "http://chitchat.andrej.com";
-	public static String sender_value;
+	static String sender_value;
 
-	public static void parse_JSON(String str_json_array) {
+	private static void parse_JSON(String str_json_array) {
 		// podatke v JSON polju zapišemo kot Java objekt (to naredi JSONValue.parse)
 		Object jobj_json_array = JSONValue.parse(str_json_array);
 		// JSON podatke zapisane v Java obkejtu pretvorimo v JSON (casting to JSONArray)
@@ -50,10 +50,10 @@ class Klient {
 
 			if (global_value.equals("true")) {
 				ChitChat.chatFrame.addMessage(sender_value,text_value, Color.blue);
-				System.out.println(" " + sender_value + " : " + text_value + " (GLOBAL)");
+				Logger.info(" " + sender_value + " : " + text_value + " (GLOBAL)");
 			} else {
 				ChitChat.chatFrame.addMessage(sender_value,text_value, Color.orange);
-				System.out.println(" " + sender_value + " : " + text_value);
+				Logger.info(" " + sender_value + " : " + text_value);
 			}
 		}
 	}

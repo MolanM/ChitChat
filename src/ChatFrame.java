@@ -126,7 +126,7 @@ class ChatFrame extends JFrame implements ActionListener, KeyListener {
 	 */
 	public void addMessage(String person, String message) {
 		String chat = this.output.getText();
-//		this.output.setForeground(Color.black);
+
 		this.output.setText(chat + person + ": " + message + "\n");
 	}
 
@@ -198,13 +198,10 @@ class ChatFrame extends JFrame implements ActionListener, KeyListener {
 			this.addMessage(this.vzdevek.getText(), this.input.getText(), Color.black);
 
 			this.input.setText("");
-
 		}
 	}
 
 	@Override
 	public void keyReleased(KeyEvent e) {
-		// TODO Auto-generated method stub
-		
 	}
 }

@@ -1,5 +1,4 @@
 import com.fasterxml.jackson.annotation.JsonProperty;
-import org.pmw.tinylog.Logger;
 import java.util.Date;
 
 class Uporabnik {
@@ -35,6 +34,4 @@ class Uporabnik {
 	public void setLastActive(Date lastActive) {
 		this.lastActive = lastActive;
 	}
-	
-	
 }

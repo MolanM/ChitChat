@@ -30,6 +30,5 @@ class IzpisiPrejetoRobot extends TimerTask {
 			} else {
 				Logger.info("Prebral sem : " + prejeto_sporocilo);
 			}
-
 	}
 }
